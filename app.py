@@ -6,4 +6,5 @@ app = fl.Flask(__name__)
 def say_hello():
     return "Hi Mom!"
     
-
+if __name__ == "__main__":
+    app.run()
