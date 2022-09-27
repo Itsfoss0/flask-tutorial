@@ -1,2 +1,3 @@
-## This Repo Documents my journey learnig the Flask Framework for Web Development.
-#### Code snipnents and important concepts will be documented here.
+## Flask Python Microframework.
+Let's dive into Flask.
+1. <a href ="./.the-run/concepts/introduction.md"><P>What is Flask? </p></a>
