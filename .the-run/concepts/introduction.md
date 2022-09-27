@@ -1,1 +1,2 @@
 ## What is Flask?
+Flask is web application mini framework written in python. Its a micro-framwork in that it does not include feature like ORM (Object Relational Manager) It  however, has alot of other cool features like url routing and 
