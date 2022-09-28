@@ -1,10 +1,10 @@
-import flask as fl 
+from flask import Flask, render_template, flash
 
-app = fl.Flask(__name__)
+app = Flask(__name__)
 
-@app.route("/")
-def say_hello():
-    return "Hi Mom!"
+@app.route("/index")
+def index():
+    return render_template('index.html')
     
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False)
