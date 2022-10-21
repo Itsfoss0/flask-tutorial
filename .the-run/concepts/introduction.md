@@ -26,5 +26,5 @@ The next thing is to instantiate the Flask class or create an object of the Flas
 
 Here *app* can be any valid variable name, it doesnt have to be named app.
 
-Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping. 
+Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping.  By definition, decorators  are functions that take other functionds and  extent the behaviour of the latter function without explicitly modifying it.  This sound confusing but its really not, especially after you have seen some examples of how decorators work from this article [Here]("https://github.com/realtpython/materials/primer-on-python-decorators") 
 
