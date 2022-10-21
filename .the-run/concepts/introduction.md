@@ -6,8 +6,19 @@ Flask is a very powerful Framework considering what it brings on the table that 
 Alot of big websites like [Netflix](https://netflix.com) uses Flask for their backend infrustructure to serve their API's and more. 
 Speaking of cool, the coolest feature I've come across(So far ) is Flash messages. 
 
+
 ## Getting started with Flask 
 
 To get started with flask, you dont really need a trip around the moon and back. The very basic knowledged of Python, HTML and some CSS is all  you need to roll. 
 
 ## Making the magic happen
+Enough with the talks. So, how do you build your first site in Flask huh? To write your first web App  using the flask framework, fire up your favourite text editor ( I use emacs BTW ) and create a file ending with a ```".py"``` extention.
+
+The first thing we need to do in our file is to import the Flask class from the flask module, at the very first line of our code. 
+
+ ``` from flask import Flask ```
+
+The next thing is to instantiate the Flask class or create an object of the Flask class passing in ```__name__``` an argument. Remember whenever a class is instantiated in python, the  constructor is called (the ```__init__``` method of that class) In this case, Flask's constructor takes one argument. Which is the name of the current module. 
+
+
+
