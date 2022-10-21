@@ -38,3 +38,5 @@ in the above example, app is the object we initialized earlier in our course and
 
 We want to setup our webstie such that when someone visits *example.xyz/*, The website responds with something. This is made possible by wrapping a function the route. 
 
+<code>def index():</code></br>
+<code>return "Hi Mom!" </code>
