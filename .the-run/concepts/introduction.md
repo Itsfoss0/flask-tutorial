@@ -38,12 +38,21 @@ in the above example, app is the object we initialized earlier in our course and
 
 We want to setup our webstie such that when someone visits *example.xyz/*, The website responds with something. This is made possible by wrapping a function the route. 
 
-<code>def index():</code></br>
-<code>return "Hi Mom!" </code>
-
+~~~~
+def index():
+        return "Hi Mom!" 
+~~~~
 The last thing to do is to call the run() method on the object we created and the website should be up and running. 
+
+Putting the pieces together, the entire code should look like this
+
 
 Congratulations you just said __Hi__ to your mom in Flask
 
 
 
+~~~
+
+    
+
+~~~
