@@ -42,17 +42,26 @@ We want to setup our webstie such that when someone visits *example.xyz/*, The w
 def index():
         return "Hi Mom!" 
 ~~~~
-The last thing to do is to call the run() method on the object we created and the website should be up and running. 
+The last thing to do is to call the run() method on the object we created, with an argument of Debug set to True.The website should be up and running. 
 
 Putting the pieces together, the entire code should look like this
 
+~~~
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+        return "Hi Mom!"
+
+if __name__ == "__main__":
+        app.run(Debug=True)
+    
+
+~~~
 
 Congratulations you just said __Hi__ to your mom in Flask
 
 
 
-~~~
-
-    
-
-~~~
