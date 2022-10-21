@@ -1,14 +1,26 @@
-from flask import Flask, render_template, flash
+from flask import Flask, render_template, url_for, flash, redirect 
 import requests 
+
+
 app = Flask(__name__)
 
-@app.route("/index",methods=['GET', 'POST'])
-def index():
-    return render_template("index.html")
+@app.route("/index/admin")
+def admin_rule():
+    return "<h1 align='center'> Hi There Admin!!!</h1>"
+
+@app.route("/index/guest")
+def guest_user():
+    return "<h2> Nice to see you Guest</h2>"
 
 
-@app.route("/greetings", methods=['GET', 'POST'])
-def greet():
-    render_template("index.html", message=requests.form.get("message"))  
+@app.route('/index/<role>')
+def index(role):
+    if (role.strip().lower() == "admin"):
+        return redirect(url_for('admin_rule'))
+    elif (role.strip().lower() == "guest"):
+        return redirect(url_for('guest_user'))
+    else:
+        return "<h3> That also counts thou </h3>"
+
 if __name__ == "__main__":
     app.run(debug=False)
