@@ -21,4 +21,10 @@ The first thing we need to do in our file is to import the Flask class from the 
 The next thing is to instantiate the Flask class or create an object of the Flask class passing in ```__name__``` an argument. Remember whenever a class is instantiated in python, the  constructor is called (the ```__init__``` method of that class) In this case, Flask's constructor takes one argument. Which is the name of the current module. 
 
 
+```app = Flask(__name__)```
+
+
+Here *app* can be any valid variable name, it doesnt have to be named app.
+
+Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping. 
 
