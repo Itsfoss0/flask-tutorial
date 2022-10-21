@@ -16,12 +16,17 @@ Enough with the talks. So, how do you build your first site in Flask huh? To wri
 
 The first thing we need to do in our file is to import the Flask class from the flask module, at the very first line of our code. 
 
- ``` from flask import Flask ```
+ ~~~python 
+  from flask import Flask 
+~~~
 
 The next thing is to instantiate the Flask class or create an object of the Flask class passing in ```__name__``` an argument. Remember whenever a class is instantiated in python, the  constructor is called (the ```__init__``` method of that class) In this case, Flask's constructor takes one argument. Which is the name of the current module. 
 
 
-```app = Flask(__name__)```
+```python 
+app = Flask(__name__)
+
+```
 
 
 Here *app* can be any valid variable name, it doesnt have to be named app.
@@ -32,7 +37,10 @@ The route on the other hand is just the path that you follow after the website's
 
 To define a path in Flask, you just add a decorator to the object's route call, passing the path as a string and occassionaly the HTTP Methods as a list of strings. Lets see this in an example.
 
-```@app.route("/")```
+```python 
+@app.route("/")
+
+```
 
 in the above example, app is the object we initialized earlier in our course and route is a method defined in the Flask class. the forwad slash here indicate the route. ( Assuming our website was *example.xyz*)The full path would have been *example.xyz/* Which is just the index. 
 
