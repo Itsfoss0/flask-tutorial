@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, flash, redirect 
+from flask import Flask, url_for, redirect 
 import requests 
 
 
@@ -20,7 +20,7 @@ def index(role):
     elif (role.strip().lower() == "guest"):
         return redirect(url_for('guest_user'))
     else:
-        return "<h3> That also counts thou </h3>"
+        return "<h3> Great !! </h3>"
 
 if __name__ == "__main__":
     app.run(debug=False)
