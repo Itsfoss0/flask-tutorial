@@ -40,3 +40,10 @@ We want to setup our webstie such that when someone visits *example.xyz/*, The w
 
 <code>def index():</code></br>
 <code>return "Hi Mom!" </code>
+
+The last thing to do is to call the run() method on the object we created and the website should be up and running. 
+
+Congratulations you just said __Hi__ to your mom in Flask
+
+
+
