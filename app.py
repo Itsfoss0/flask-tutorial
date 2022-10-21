@@ -10,7 +10,7 @@ def admin_rule():
 
 @app.route("/index/guest")
 def guest_user():
-    return "<h2> Nice to see you Guest</h2>"
+    return "<h2> Nice to see you Guest </h2>"
 
 
 @app.route('/index/<role>')
