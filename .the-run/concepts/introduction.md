@@ -28,3 +28,13 @@ Here *app* can be any valid variable name, it doesnt have to be named app.
 
 Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping.  By definition, decorators  are functions that take other functionds and  extent the behaviour of the latter function without explicitly modifying it.  This sound confusing but its really not, especially after you have seen some examples of how decorators work from this article [Here]("https://github.com/realtpython/materials/primer-on-python-decorators") 
 
+The route on the other hand is just the path that you follow after the website's url. Take for example, a website with the url of *example.xyz* when you visit *example.xyz/here*, *here* in this case it the path, or the route. When the path is not specified, by  definition that is called the index path, or the entry point. On most sites, that is considered the home url. 
+
+To define a path in Flask, you just add a decorator to the object's route call, passing the path as a string and occassionaly the HTTP Methods as a list of strings. Lets see this in an example.
+
+```@app.route("/")```
+
+in the above example, app is the object we initialized earlier in our course and route is a method defined in the Flask class. the forwad slash here indicate the route. ( Assuming our website was *example.xyz*)The full path would have been *example.xyz/* Which is just the index. 
+
+We want to setup our webstie such that when someone visits *example.xyz/*, The website responds with something. This is made possible by wrapping a function the route. 
+
