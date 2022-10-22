@@ -1,3 +1,6 @@
+<h1 align='center'>Flask Mini-Framework</h1>
+<hr/>
+
 ## What is Flask?
 Flask is web application mini framework written in python. Its a micro-framwork in that it does not include feature like [ORM](https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one) (Object Relational Manager) It  however, has alot of other cool features like url routing and template engines. 
 ## Why Flask
