@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
 ~~~
 
-Congratulations you just said __Hi__ to your mom in Flask
+Congratulations you just said __Hi__ to your mom in Flask!
 
 
 
