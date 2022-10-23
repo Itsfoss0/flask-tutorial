@@ -15,7 +15,7 @@ Speaking of cool, the coolest feature I've come across(So far ) is Flash message
 To get started with flask, you dont really need a trip around the moon and back. The very basic knowledged of Python, HTML and some CSS is all  you need to roll. 
 
 ## Making the magic happen
-Enough with the talks. So, how do you build your first site in Flask huh? To write your first web App  using the flask framework, fire up your favourite text editor ( I use emacs BTW ) and create a file ending with a ```".py"``` extention.
+ To write your first web App  using the flask framework, fire up your favourite text editor ( I use emacs BTW ) and create a file ending with a ```".py"``` extention.
 
 The first thing we need to do in our file is to import the Flask class from the flask module, at the very first line of our code. 
 
@@ -34,7 +34,7 @@ app = Flask(__name__)
 
 Here *app* can be any valid variable name, it doesnt have to be named app.
 
-Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping.  By definition, decorators  are functions that take other functionds and  extent the behaviour of the latter function without explicitly modifying it.  This sound confusing but its really not, especially after you have seen some examples of how decorators work from this article [Here]("https://github.com/realtpython/materials/primer-on-python-decorators") 
+Next, we create a decorator for a route and map a function to it (Trust me, its much simple than it sounds :P ) But before we do that, lets talk briefly about decorators and  mapping.  By definition, decorators  are functions that take other functions and  extends the behaviour of the latter function without explicitly modifying it.  This sound confusing but its really not, especially after you have seen some examples of how decorators work from this article [Here]("https://github.com/realtpython/materials/primer-on-python-decorators") 
 
 The route on the other hand is just the path that you follow after the website's url. Take for example, a website with the url of *example.xyz* when you visit *example.xyz/here*, *here* in this case it the path, or the route. When the path is not specified, by  definition that is called the index path, or the entry point. On most sites, that is considered the home url. 
 
@@ -74,5 +74,4 @@ if __name__ == "__main__":
 
 Congratulations you just said __Hi__ to your mom in Flask!
 
-
-
+Thanks [Flor](https://github.com/Florr629) for Reviewing me :) 
